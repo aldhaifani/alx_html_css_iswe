@@ -6,7 +6,7 @@ This HTML skeleton is for a already designed webpage.
 The final HTML skeleton should be the same as the following scematics.
 
 
-![scematics](https://i.imgur.com/PZCGxIB.jpg
+![scematics](https://i.imgur.com/PZCGxIB.jpg)
 
 
 
