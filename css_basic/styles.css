@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(to bottom right, #FFEEEE, #DDEFBB );
 }
 
 main {
@@ -17,4 +18,5 @@ article {
 aside {
     flex: 1;
     overflow-y: auto;
+    background-image: linear-gradient(to bottom right, #24C6DC, #514A9D );
 }
