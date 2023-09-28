@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 50px;
+            width: 100vw;
+            height: 100vh;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        div {
+            width: fit-content;
+            margin: 10px auto;
+        }
+        form {
+            margin: 0 auto;
+            width: 450px;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        form li + li {
+            margin-top: 1em;
+        }
+        label {
+            display: inline-block;
+            width: 140px;
+            text-align: right;
+        }
+        input {
+            font-size: 1em;
+            font-family: sans-serif;
+            width: 300px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+        input:focus {
+            border-color: #000;
+        }
+        li:last-child {
+            padding-left: 150px;
+        }
+        span {
+            font-size: small;
+            margin-left: 150px;
+        }
+        #error_li {
+            background-color: rgb(246, 121, 121);
+            text-align: left;
+            font-family: monospace;
+            padding: 5px 10px;
+            border-radius: 1em;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <form id="form">
+            <ul>
+                <li id="error_li">
+                    <p id="error_p">message</p>
+                </li>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" name="user_name" id="name" required>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" name="user_email" id="email" required>
+                </li>
+                <li>
+                    <label for="pswd">Password</label>
+                    <input type="password" name="user_pswd" id="pswd" required>
+                </li>
+                <li>
+                    <label for="pswd_confirm">Confirm Password</label>
+                    <input type="password" name="user_pswd_confirm" id="pswd_confirm" required>
+                </li>
+                <li>
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    
+    <script>
+
+        const form = document.getElementById('form');
+        const pswd = document.getElementById('pswd');
+        const pswd_confirm = document.getElementById('pswd_confirm');
+        const error_msg_p = document.getElementById('error_p');
+
+        regex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/u;
+        
+        form.addEventListener('submit', (e) => {
+            let error_msg = '';
+            pswd.setCustomValidity('');
+
+            pswd_confirm.style.border = '1px solid #999';
+            pswd.style.border = '1px solid #999';
+            
+            if (regex.test(pswd.value)) {
+                if (pswd.value !== pswd_confirm.value) {
+                    error_msg = 'Password does NOT match';
+                    pswd_confirm.style.border = '1px solid red';
+                }
+            } else {
+                error_msg = 'Password must be atleast 8 characters; contains at least: one uppercase, one lowercase, one digit, and one special character.';
+                pswd.style.border = '1px solid red';
+            }
+
+            if (error_msg) {
+                e.preventDefault();
+                document.getElementById('error_li').style.display = 'block';
+                error_msg_p.innerText = error_msg;
+            }
+        });
+
+    </script>
+
+
+</body>
+</html>
