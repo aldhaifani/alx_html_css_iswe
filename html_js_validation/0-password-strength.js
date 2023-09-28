@@ -1,8 +1,6 @@
 const form = document.getElementById('passwordForm');
 const error = document.getElementById('error');
 
-console.log('hello');
-
 form.addEventListener('submit', (e) => {
   if (!validatePassword()) {
     e.preventDefault();
