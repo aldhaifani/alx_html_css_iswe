@@ -21,7 +21,8 @@ h5,
 h6,
 p,
 ol,
-ul {
+ul,
+main {
 	margin: 0;
 	padding: 0;
 }
@@ -51,15 +52,13 @@ body {
 		cover;
 }
 
-header,
-main,
-footer {
+header {
 	width: 90vw;
 	margin: 0 auto;
 }
 
 section {
-	width: 100%;
+	width: 100vw;
 	height: fit-content;
 }
 
@@ -114,7 +113,6 @@ header ul {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 50px;
 }
 
 .hero h1 {
@@ -183,4 +181,48 @@ header ul {
 	font-style: italic;
 	font-size: 14px;
 	line-height: 20px;
+}
+
+/*============
+    quote
+============*/
+.quote {
+	width: 100%;
+	height: 300px;
+	background-color: #c271ff;
+	color: white;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container {
+	display: flex;
+	justify-content: start;
+  width: 90vw;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.quote-container div {
+  display: flex;
+  height: 158px;
+  flex-direction: column;
+  margin-left: 40px;
+  font-size: 22px;
+}
+
+.quote-container div q {
+  margin-bottom: 40px;
+}
+
+.quote-container div .name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.quote-container div .job {
+  font-style: italic;
+  font-weight: 300;
 }
