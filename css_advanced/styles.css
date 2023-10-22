@@ -191,38 +191,107 @@ header ul {
 	height: 300px;
 	background-color: #c271ff;
 	color: white;
-  padding: 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	padding: 50px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .quote-container {
 	display: flex;
 	justify-content: start;
-  width: 90vw;
-  margin: 0 auto;
-  align-items: center;
+	width: 90vw;
+	margin: 0 auto;
+	align-items: center;
 }
 
 .quote-container div {
-  display: flex;
-  height: 158px;
-  flex-direction: column;
-  margin-left: 40px;
-  font-size: 22px;
+	display: flex;
+	height: 158px;
+	flex-direction: column;
+	margin-left: 40px;
+	font-size: 22px;
 }
 
 .quote-container div q {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .quote-container div .name {
-  font-weight: bold;
-  margin-bottom: 10px;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 .quote-container div .job {
-  font-style: italic;
-  font-weight: 300;
+	font-style: italic;
+	font-weight: 300;
+}
+
+/*==============
+    hero
+===============*/
+.popular {
+	width: 100%;
+	height: 500px;
+	background-color: white;
+	color: black;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.popular h3 {
+	font-size: 32px;
+	font-weight: 300;
+}
+
+.popular h3 span {
+	color: #c271ff;
+	font-weight: bold;
+}
+
+.popular-container {
+	width: 90vw;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.popular-container .vids {
+  width: 255px;
+  margin: auto 15px;
+}
+
+.popular-container .vid-title {
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.popular-container .vid-desc {
+	opacity: 0.5;
+	margin: 10px 0px;
+}
+
+.popular-container .instractor {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+}
+
+.popular-container .instractor img {
+	aspect-ratio: 1;
+	width: 30px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.popular-container .rating {
+	display: flex;
+	justify-content: space-between;
+  width: 100%;
 }
