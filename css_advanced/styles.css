@@ -332,3 +332,49 @@ button {
   text-align: center;
 	width: 260px;
 }
+
+
+/*==============
+    questions
+===============*/
+.questions {
+  height: 1000px;
+	background-color: white;
+	color: black;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.questions h2 {
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+.questions-list {
+  width: 920px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.questions-list div {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 240px;
+}
+
+.questions-list div h5 {
+  font-size: 16px;
+}
+
+.questions-list div p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
