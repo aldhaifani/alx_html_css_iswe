@@ -313,7 +313,7 @@ button {
 .membership h3 {
 	font-size: 32px;
 	font-weight: 300;
-  margin-top: 50px;
+	margin-top: 50px;
 }
 
 .membership h3 span {
@@ -329,16 +329,15 @@ button {
 }
 
 .membership-item {
-  text-align: center;
+	text-align: center;
 	width: 260px;
 }
-
 
 /*==============
     questions
 ===============*/
 .questions {
-  height: 1000px;
+	height: 1000px;
 	background-color: white;
 	color: black;
 	padding: 50px 0;
@@ -349,32 +348,71 @@ button {
 }
 
 .questions h2 {
-  font-size: 60px;
-  font-weight: lighter;
+	font-size: 60px;
+	font-weight: lighter;
 }
 
 .questions-list {
-  width: 920px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
+	width: 920px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
 }
 
 .questions-list div {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 240px;
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 240px;
 }
 
 .questions-list div h5 {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .questions-list div p {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 25px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 25px;
 }
 
+/*==============
+    footer
+===============*/
+footer {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+
+.footer-conatiner {
+	height: 90%;
+  width: 100%;
+	margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-conatiner p {
+	color: #979797;
+	font-weight: 300;
+}
+
+.footer-main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-main div {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
